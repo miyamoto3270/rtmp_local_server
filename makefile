@@ -10,6 +10,10 @@ stop:
 down:
 	docker-compose down
 
+# コンテナ状態確認
+ps:
+	docker-compose ps -a
+
 # コンテナ初期化
 down-init:
 	docker-compose down --rmi all -v
